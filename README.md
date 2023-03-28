@@ -49,6 +49,7 @@ Color color = Color.red;
 
 color = color.WithG(1f);
 
+// C# 9 Deconstruct
 var (r, g, b) = color;
 ```
 
