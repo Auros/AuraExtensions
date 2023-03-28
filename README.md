@@ -1,7 +1,7 @@
 # AuraExtensions
 Provides useful extensions for common Unity structs like `UnityEngine.Vector3` and `UnityEngine.Color`.
 
-This includes `.With[X|Y|Z|W|R|G|B](...)` and [Deconstruct](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/deconstruct) methods for Unity versions that support C# 9.
+This includes `.With[X|Y|Z|W|R|G|B](...)`, `.Only[X|Y|Z|W](...)` and [Deconstruct](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/deconstruct) methods for Unity versions that support C# 9.
 
 ## Installation
 
@@ -31,6 +31,8 @@ var (v2x, v2y) = vector2;
 Vector3 vector3 = Vector3.zero;
 
 vector3 = vector3.WithZ(1.54f);
+
+vector3 = vector3.OnlyX();
 
 // C# 9 Deconstruct
 var (v3x, v3y, v3z) = vector3;
