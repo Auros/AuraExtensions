@@ -7,7 +7,9 @@ This includes `.With[X|Y|Z|W|R|G|B](...)`, `.Only[X|Y|Z|W](...)` and [Deconstruc
 
 ### OpenUPM
 
-*Coming Soon*
+```
+openupm add dev.auros.auraextensions
+```
 
 ### Git URL
 
