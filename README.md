@@ -45,7 +45,7 @@ Vector4 vector4 = Vector4.zero; // (0, 0, 0, 0)
 vector4 = vector4.WithW(-0.04f); // (0, 0, 0, -0.04)
 
 // C# 9 Deconstruct
-var (v4x, v4y, v4z) = vector4;
+var (v4x, v4y, v4z, v4w) = vector4;
 ```
 
 ```cs
