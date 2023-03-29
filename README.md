@@ -19,37 +19,37 @@ https://github.com/Auros/AuraExtensions.git?path=/Assets/AuraExtensions
 
 ```cs
 // Vector2, Vector3, Vector4
-Vector2 vector2 = Vector2.zero;
+Vector2 vector2 = Vector2.zero; // (0, 0)
 
-vector2 = vector2.WithX(5f);
-vector2 = vector2.WithY(-5f);
+vector2 = vector2.WithX(5f); // (5, 0, 0)
+vector2 = vector2.WithY(-5f); // (5, -5, 0)
 
 // C# 9 Deconstruct
 var (v2x, v2y) = vector2;
 
 // Vector3, Vector4
-Vector3 vector3 = Vector3.zero;
+Vector3 vector3 = Vector3.one; // (1, 1, 1)
 
-vector3 = vector3.WithZ(1.54f);
+vector3 = vector3.WithZ(1.54f); // (1, 1, 1.54)
 
-vector3 = vector3.OnlyX();
+vector3 = vector3.OnlyX(); // (1, 0, 0)
 
 // C# 9 Deconstruct
 var (v3x, v3y, v3z) = vector3;
 
 // Vector4
-Vector4 vector4 = Vector4.zero;
+Vector4 vector4 = Vector4.zero; // (0, 0, 0, 0)
 
-vector4 = vector4.WithW(-0.04f);
+vector4 = vector4.WithW(-0.04f); // (0, 0, 0, -0.04)
 
 // C# 9 Deconstruct
 var (v4x, v4y, v4z) = vector4;
 ```
 
 ```cs
-Color color = Color.red;
+Color color = Color.red; // (1, 0, 0, 1)
 
-color = color.WithG(1f);
+color = color.WithG(1f); // (1, 1, 0, 1)
 
 // C# 9 Deconstruct
 var (r, g, b) = color;
